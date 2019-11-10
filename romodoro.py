@@ -33,11 +33,11 @@ while(True):
     except (EOFError, TypeError, ValueError):
         break
 try:
-    x *= 60
-    # while(True):
+        # while(True):
     for i in range(0, x):
-        print('\r', x-i, end='')
-        time.sleep(1)
+        for j in range(0, 60):
+            print('\r', x-i, ':', 60-j, end='')
+            time.sleep(1)
     # playsound('/home/ronin/Developer/apps/pomodoro/Beep-tone.mp3')
     subprocess.run(["mousepad", "z.txt"])
 
