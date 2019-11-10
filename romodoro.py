@@ -36,7 +36,7 @@ try:
         # while(True):
     for i in range(0, x):
         for j in range(0, 60):
-            print('\r', x-i, ':', 60-j, end='')
+            print('\r', x-i-1, ':', 59-j, end='')
             time.sleep(1)
     # playsound('/home/ronin/Developer/apps/pomodoro/Beep-tone.mp3')
     subprocess.run(["mousepad", "z.txt"])
